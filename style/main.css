@@ -1,0 +1,338 @@
+
+.column {
+	text-align: center;
+	align-items: baseline;
+}
+
+.avatar {
+	width: 300px;
+	height: 250px;
+	border: 2px solid antiquewhite;
+	border-radius: 100%;
+	border-color: #7510F7;
+	background-color: #7510F7;
+}
+
+#purple {
+	background-color: #7510F7;
+}
+
+#purple h1 {
+	color: white;
+}
+
+#purple h2 {
+	color: white;
+}
+
+figure img.is-skill-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.social-networks-spin-icon {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.social-networks-spin-icon a {
+	margin: 15px;
+}
+
+.copyright {
+	margin-top: 25px;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	align-items: center;
+	justify-items: center;
+}
+
+p {
+	text-align: center;
+}
+
+div .column {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.purple {
+	color: #7510F7;
+}
+
+.column {
+	border: 1 px, solid gray;
+}
+
+.content ul {
+	margin: 0;
+}
+
+div .column-1 {
+	border-radius: 6px;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	margin: 15px;
+	padding: 25px;
+}
+
+.box {
+	box-shadow: none
+}
+
+.work-together {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.do-it {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	background-color: #141c3a;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+	border-radius: 12px;
+  color: rgb(131, 124, 124);
+  align-items: baseline;
+  text-align: center;
+}
+
+footer {
+	background-color: #7510F7;
+	color: white;
+
+}
+
+#before-footer {
+	background-color: #7510F7;
+	color: white;
+	;
+}
+
+.avatar-ref {
+	width: 150px;
+	height: 150px;
+	border: 2px solid antiquewhite;
+	border-radius: 100%;
+	border-color: #7510F7;
+	background-color: #7510F7;
+}
+
+.reference p {
+	font-size: 20px;
+	font-family: "eurostile", sans-serif;
+	font-weight: 500;
+	max-width: 700px;
+	margin: 0 auto 2.5rem;
+}
+
+.projects {
+	justify-content: center;
+	display: flex;
+}
+
+.pj-1 {
+	margin: 25px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	padding: 15px;
+	border-radius: 12px;
+	justify-content: center;
+	align-items: baseline;
+	align-items: center;
+	min-width: 350px;
+	max-width: 350px;
+}
+
+.pj-1>p {
+	padding: 15px;
+}
+
+.section.is-medium {
+	padding: 40px;
+}
+
+#white {
+	color: white;
+}
+
+.title {
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	line-height: normal;
+}
+
+.social-networks-spin-icon a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+h1 .name {
+	font-size: 20px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-networks-spin-icon img {
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+	fill: white;
+}
+
+.social-networks-spin-icon img:hover {
+	transform: scale(1.2);
+}
+
+footer img {
+	height: 70px;
+}
+
+.is-active {
+	justify-content: center;
+	align-self: center;
+}
+
+.is-active a {
+	text-align: center;
+}
+
+.navbar-item {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.navbar-item a {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+
+ h4{
+font-size: 20px;
+margin: 15px;
+}
+
+h1 {
+  margin: 15px;
+}
+h3 {
+  margin: 10px;
+}
+
+.card-footer-item{
+display: flex;
+justify-content: flex-start;
+}
+
+.card-content> h1{
+font-size: 25px;
+text-align: ;
+}
+
+
+.blog-head h1{
+  font-size: 30px;
+  text-align: center;
+
+}
+.card{
+  margin-bottom: 27px;
+}
+
+
+.text{
+  display: flex;
+  flex-direction: column;;
+  justify-content: left;
+  text-align: left;
+}
+
+.text p{
+  margin: 10px;
+  text-align: left;
+}
+
+
+.text ul {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+
+}
+
+.text li {
+  display: flex;
+  padding: 20px;
+  margin: 8px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  border-radius: 12px;
+}
+
+
+.text i{
+  font-style: italic;
+  display: flex;
+  padding: 30px;
+}
+
+.homework {
+border: none;
+margin: 45px;
+
+}
+@media only screen and (max-width: 800px) {
+	.projects {
+		flex-direction: column;
+		align-items: center;
+	}
+	.pj-1 {
+		align-items: center;
+		padding: 12px;
+		margin: 0;
+		margin-bottom: 15px;
+  }
+
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .text ul {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .text ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+   }
+
+}
+
