@@ -299,6 +299,10 @@ h3 {
   margin: 45px;
 }
 
+#hero {
+  margin-top:-50px ;
+}
+
 @media only screen and (max-width: 800px) {
   .projects {
       flex-direction: column;
