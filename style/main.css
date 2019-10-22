@@ -303,6 +303,13 @@ h3 {
   margin-top:-70px ;
 }
 
+
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+
 @media only screen and (max-width: 800px) {
   .projects {
       flex-direction: column;
