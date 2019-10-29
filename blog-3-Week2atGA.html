@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css ">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Ustin Vaskin</title>
+
+</head>
+
+<body>
+  <nav class="navbar is-transparent is-active" role="navigation" aria-label="main navigation">
+
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="img/uv-logo.png" width=50" height="28">
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start"></div>
+        <div class="navbar-end"><a class="navbar-item" href="blog.html">Blog</a>
+          <div class="navbar-item"><a class="button is-primary is-outlined is-rounded"
+              href="https://mssg.me/ustin-vaskin" target="blank">Say
+              Hello</a>
+            <div class="navbar-item"><a class="button is-primary is-outlined is-rounded" href="cv/cv-uv.html">CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="card-content">
+    <div class="blog-head">
+      <h1>
+        BLOG
+      </h1>
+    </div>
+    <!-- BEG of ARTICLE  -->
+    <div class="card">
+      <div class="card-content">
+
+        <h1>
+          Week 2 GA |
+          Behave Yourself!
+        </h1>
+        <p class="subtitle">
+          Ustin Vaskin | Published on October 28, 2019
+        </p>
+        <p class="subtitle-1">
+          <div class="text">
+            <h1>JavaScript is behavior!</h1>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="blank">
+              <li>
+                [JavaScript Guide]
+              </li>
+            </a>
+
+            <a href="https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17" target="blank">
+              <li>
+                [A brief history of JavaScript]
+              </li>
+            </a>
+            <p>
+              As we know HTML is responsible for text, CSS for style and JavaScript is behavior. Java Script is where we
+              can how the age behaves, adding interactivity. Java script is written in plain text, just like HTML CSS.
+            </p>
+
+            <h1>Data types and Variables</h1> JavaScript is dynamically typed (also called loosely typed) scripting
+            language. That is, in javascript variables can receive different data types over time. Datatypes are typed
+            of data that can be used and manipulated in a program.
+
+            <p>*The latest ECMAScript(ES6) standard defines 7 data types*: Out of which six data types are
+              Primitive(predefined). </p>
+
+            <li> *Numbers*: 5, 6.5, 7 etc. </li>
+            <li>*String*: “Hello GeeksforGeeks” etc.</li>
+            <li> *Boolean*: Represent a logical entity and can have two values: true or false.</li>
+            <li>*Null*: This type has only one value : /null./</li>
+            <li> *Undefined*: A variable that has not been assigned a value is /undefined./</li>
+            <li>*Object*: It is the most important data-type and forms the building blocks for modern JavaScript.</li>
+
+            <h4> *Variables in JavaScript:*</h4>
+            <p>
+              Variables in JavaScript are containers that hold reusable data. It is the basic unit of storage in a
+              program.
+            </p>
+            <p> * The value stored in a variable can be modified during program execution. </p>
+            <p> * A variable is only a name given to a memory location, all the operations done on the variable effects
+              that memory location. </p>
+            <p> * In JavaScript, all the variables must be declared before they can be used. </p>
+
+            <h1># Const/ Let</h1>
+
+            <code>// const variable
+                const name = ‘Mukul’;
+                name = ‘Mayank’; // will give Assignment to constant variable error.</code>
+
+            <h1>*Variable Scope in Javascript*</h1>
+
+            <h4>Scope of a variable is the part of the program from where the variable may directly be accessible.
+              In JavaScript, there are two types of scopes:</h4>
+            <li> *1.* *Global Scope* – Scope outside the outermost function attached to Window.</li>
+            <li> *2.* *Local Scope* – Inside the function being executed.</li>
+
+            <h1>Conditionals</h1>
+
+            <p><strong>*Conditionals* </strong> control behavior in JavaScript and determine whether or not pieces of
+              code can run.</p>
+
+            <h4> *if* </h4>
+
+            <p>The most common type of conditional is the if statement, which only runs if the *condition* enclosed in
+              parentheses () is [truthy] An if statement looks like this:
+            </p>
+            <code>*EXAMPLE*
+
+                if (10 > 5) {
+                      var outcome = «if block»;
+                }
+
+                outcome;
+                *OUTPUT*
+                «if block»
+                </code>
+
+            <h4>Here’s what’s happening in the example above</h4>
+
+            <p>* The keyword if tells JavaScript to start the conditional statement.</p>
+            <p>* (10 > 5) is the condition to test, which in this case is true — 10 is greater than 5.</p>
+            <p>* The part contained inside curly braces {} is the block of code to run.</p>
+            <p>* Because the condition passes, the variable outcome is assigned the value «if block».</p>
+
+            <h4> *else* </h4>
+
+            <p>You can extend an if statement with an else statement, which adds another block to run when the if
+              conditional doesn’t pass.
+            </p>
+            <code>*EXAMPLE*
+                if («cat» === «dog») {
+                      var outcome = «if block»;
+                } else {
+                      var outcome = «else block»;
+                }
+                outcome;
+                *OUTPUT*
+                «else block»
+                </code>
+
+            <p>In the example above, «cat» and «dog» are not equal, so the else block runs and the variable outcome gets
+              the value «else block».</p>
+
+            <h4> *else if* </h4>
+
+            <p>You can also extend an if statement with an else if statement, which adds another conditional with its
+              own block.
+            </p>
+            <code>*EXAMPLE*
+                if (false) {
+                      var outcome = «if block»;
+                } else if (true) {
+                      var outcome = «else if block»;
+                } else {
+                      var outcome = «else block»;
+                }
+
+                outcome;
+                *OUTPUT*
+
+                «else if block»
+                </code>
+
+            <p>You can use multiple if else conditionals, but note that only the first else if block runs. JavaScript
+              skips any remaining conditionals after it runs the first one that passes.</p>
+
+            <code>*EXAMPLE*
+    if (false) {
+          var outcome = «if block»;
+    } else if (true) {
+          var outcome = «first else if block»;
+    } else if (true) {
+          var outcome = «second else if block»;
+    } else {
+          var outcome = «else block»;
+    }
+    outcome;
+    *OUTPUT*
+
+    «first else if block»</code>
+
+            <p>An else if statement doesn’t need a following else statement to work. If none of the if or else if
+              conditions pass, then JavaScript moves forward and doesn’t run any of the conditional blocks of code.</p>
+            <code>*EXAMPLE*
+    if (false) {
+          var outcome = «if block»;
+    } else if (false) {
+          var outcome = «else if block»;
+    }
+
+    outcome;
+    *OUTPUT*
+    «first else if block»</code>
+
+            <h1>Loops</h1>
+
+            <p>Loops offer a quick and easy way to do something repeatedly. This chapter of the [JavaScript Guide]
+              introduces the different iteration statements available to JavaScript. You can think of a loop as a
+              computerized version of the game where you tell someone to take X steps in one direction then Y steps in
+              another; for example, the idea «Go five steps to the east» could be expressed this way as a loop:</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="blank">
+              <li>
+                [Loops and iteration]
+              </li>
+            </a>
+            <code>for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log(‘Walking east one step’);
+}</code>
+
+            <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an
+              action some number of times (and it’s actually possible that number could be zero). The various loop
+              mechanisms offer different ways to determine the start and end points of the loop. There are various
+              situations that are more easily served by one type of loop over the others.</p>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement"
+              target="blank">
+              <li>
+                [for statement]
+              </li>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement"
+              target="blank">
+              <li>
+                [do...while statement]
+              </li>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#while_statement"
+              target="blank">
+              <li>
+                [while statement]
+              </li>
+            </a>
+
+            <h1>Functions</h1>
+
+            <h4> <strong> *Functions* </strong>are blocks of code that can be named and reused.
+              Here’s how to declare a function:</h4>
+            <code>
+    *EXAMPLE*
+    function addTwoNumbers(x, y) {
+           return x + y;
+    }</code>
+
+            <p>There’s a lot going on in the example above, so let’s look at each part individually.</p>
+
+            <p>* function is the *keyword* that starts declaring a function.</p>
+            <p>* addTwoNumbers is the function’s *name*, which is customizable — just like
+              [variable](https://www.javascript.com/learn/variables) names.</p>
+            <p>* (x, y) are *parameters*, variable names for the inputs a function will accept.</p>
+            <p> * return is the *keyword* that exits the function and shares an optional value outside.</p>
+
+            <h4>*Using functions*</h4>
+            <p>Once a function is defined, you can use it by referencing its name with parentheses () right after. Note
+              that a function /doesn’t have/ to have parameters.
+            </p>
+
+            <code>*EXAMPLE*
+                function greetThePlanet() {
+                       return «Hello world!»;
+                }
+
+                greetThePlanet();
+                *OUTPUT*
+                «Hello world!»</code>
+
+            <p>If a function _does_ have parameters, you’ll need to provide values inside the parentheses when using the
+              function.
+            </p>
+
+            <code>*EXAMPLE*
+                  function square(number) {
+                         return number * number;
+                  }
+
+                  square(16);
+                  *OUTPUT*
+                  256</code>
+
+            </a>
+            <a href=" https://www.javascript.com/learn/functions" "
+              target=" blank ">
+              <li>
+                [JS Functions]
+              </li>
+            </a>
+
+            <h1>Arrays
+            </h1>
+
+            <h4><strong> *Arrays* </strong> are container-like values that can hold other values. The values inside an
+              array are called elements.
+            </h4>
+            <code>*EXAMPLE*
+                var breakfast = [«coffee», «croissant»];
+                breakfast;
+                *OUTPUT*
+                [«coffee», «croissant»]</code>
+
+            <p>Array elements don’t all have to be the same type of value. Elements can be any kind of JavaScript value
+              — even other arrays.</p>
+
+            <code>*EXAMPLE*
+    var hodgepodge = [100, «paint», [200, «brush»], false];
+    hodgepodge;
+    *OUTPUT*
+    [100, «paint», [200, «brush»], false]</code>
+
+            <h4> <strong>*Accessing Elements*
+              </strong> </h4>
+
+            <P>To access one of the elements inside an array, you’ll need to use the brackets and a number like this:
+              myArray[3]. JavaScript arrays begin at 0, so the first element will always be inside [0].</P>
+
+            <code>*EXAMPLE*
+    var sisters = [«Tia», «Tamera»];
+    sisters[0];
+    *OUTPUT*
+    «Tia»</code>
+
+            <p>To get the /last element,/ you can use brackets and `1` less than the array’s length property.</p>
+
+            <code>*EXAMPLE*
+    var actors = [«Felicia», «Nathan», «Neil»];
+    actors[actors.length - 1];
+    *OUTPUT*
+    «Neil»</code>
+
+            <p>This also works for setting an element’s value.</p>
+            <code>*EXAMPLE*
+    var colors = [«red», «yelo», «blue»];
+    colors[1] = «yellow»;
+    colors;
+    *OUTPUT*
+    [«red», «yellow», «blue»]</code>
+
+            <h4> <strong>*Properties and methods*</strong>
+              Arrays have their own built-in variables and functions, also known as *properties* and *methods*. Here are
+              some of the most common ones.
+              *length*
+              An array’s length property stores the number of elements inside the array.
+            </h4>
+
+            <code>*EXAMPLE*
+                [«a», «b», «c», 1, 2, 3].length;
+                *OUTPUT*
+                </code>
+
+            <h4> <strong> *concat*</strong>
+              An array’s concat method returns a new array that combines the values of two arrays.</h4>
+            <code>*EXAMPLE*
+    [«tortilla chips»].concat([«salsa», «queso», «guacamole»]);
+    *OUTPUT*
+    [«tortilla chips», «salsa», «queso», «guacamole»]</code>
+
+            <h4><strong>*pop*
+              </strong> An array’s pop method removes the last element in the array and returns that element’s value.
+            </h4>
+            <code>*EXAMPLE*
+    [«Jupiter», «Saturn», «Uranus», «Neptune», «Pluto»].pop();
+    *OUTPUT*
+    «Pluto»</code>
+
+            <h4> <strong>*push*</strong>
+              An array’s push method adds an element to the array and returns the array’s length.</h4>
+            <code>*EXAMPLE*
+              [«John», «Kate»].push(8);
+              *OUTPUT* 3
+              </code>
+
+            <h4><strong>*reverse*</strong>
+              An array’s reverse method returns a copy of the array in opposite order.</h4>
+
+            <code>*EXAMPLE*
+                [«a», «b», «c»].reverse();
+                *OUTPUT*
+                [«c», «b», «a»]</code>
+
+            <div class=" homework ">
+              <strong>My Homework Samples</strong>
+              <a href="
+              https://github.com/UstinVaskin/Code-HW-for-blog/tree/master/Code-HW-for-blog-master/Code-HW-for-blog-2-week%20 "
+                target=" blank ">
+                <li>2 WEEK CODE SAMPLES</li>
+              </a>
+            </div>
+          </div>
+
+        </p>
+        <p class=" subtitle ">
+          Ustin Vaskin | Published on October 19, 2019
+        </p>
+      </div>
+    </div>
+    <!-- Cart footer  -->
+    <footer class=" card-footer ">
+      <p class=" card-footer-item ">
+        <span>
+          ---------- <a href=" blog.html "> Back <-- </a> </span> </p> </footer> </div> <!-- END OF ARTICLE -->
+
+              <!-- END OF ARTICLE  -->
+
+              <!-- FOOTER -->
+              <footer class=" section is-primary is-small has-text-centered ">
+                <div class=" container is-narrow ">
+                  <img id=" logo-footer " src=" img/uv-logo-white.png " alt=" Ustin Vaskin | Designer, Software
+              Engineer ">
+                  <p>
+                    Ustin Vaskin | Designer, Software Engineer &amp; Project Manager
+
+                  </p>
+                  <div class=" columns is-centered ">
+                    <div id=" lls " class=" column is-one-third ">
+                      <h1 class=" title is-size-4-touch "> Living, learning, &amp; self-enhancing every day. </h1>
+                    </div>
+                  </div>
+                  <div class=" social-icons ">
+                    <ul class=" social-networks-spin-icon ">
+                      <!-- ADD MY LINKS -->
+                      <li>
+                        <a href=" https://www.linkedin.com/in/ustin-vaskin/ " class=" icon-linkedin ">
+                          <img src=" img/logos/linkedin-in-brands.svg " alt=" LinkedIn "></a>
+                      </li>
+                      <li>
+                        <a href=" https://www.facebook.com/ustin.m.vaskin " class=" icon-facebook "> <img
+                            src=" img/logos/facebook-brands.svg " alt=" Facebook "></a>
+                      </li>
+                      <li>
+                        <a href=" https://github.com/UstinVaskin " class=" icon-github "><img class=" change-my-color "
+                            src=" img/logos/github-brands.svg " alt=" GitHub "></a>
+                      </li>
+                    </ul>
+                    <div class=" copyright ">Handcrafted by me | Made by Bulma <span>&#169 2019</span></div>
+
+                  </div>
+              </footer>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all " navbar-burger " elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the " data-target " attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the " is-active " class on both the " navbar-burger " and the " navbar-menu "
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+</script>
+
+</html>
