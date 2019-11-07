@@ -37,6 +37,9 @@ figure img.is-skill-icon {
   justify-content: center;
   flex-direction: row;
 }
+.button {
+  margin: 10px;
+}
 
 .social-networks-spin-icon a {
   margin: 15px;
