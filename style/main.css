@@ -10,13 +10,13 @@
   height: 250px;
   border: 2px solid antiquewhite;
   border-radius: 100%;
-  border-color: #7510F7;
-  background-color: #7510F7;
+  border-color: #202040;
+  background-color: #202040;
 }
 
 
 #purple {
-  background-color: #7510F7;
+  background-color: #202040;
 }
 
 #purple h2 {
@@ -70,7 +70,7 @@ div .column {
 }
 
 .purple {
-  color: #7510F7;
+  color: #202040;
 }
 
 .column {
@@ -111,12 +111,12 @@ div .column-1 {
 }
 
 footer {
-  background-color: #7510F7;
+  background-color: #b030b0;
   color: white;
 }
 
 #before-footer {
-  background-color: #7510F7;
+  background-color: #b030b0;
   color: white;
   ;
 }
@@ -126,8 +126,8 @@ footer {
   height: 150px;
   border: 2px solid antiquewhite;
   border-radius: 100%;
-  border-color: #7510F7;
-  background-color: #7510F7;
+  border-color: #b030b0;
+  background-color: #b030b0;
 }
 
 .reference p {
@@ -287,7 +287,7 @@ max-width: 1200px;
   text-align: left;
 }
 a {
-  color: #141c3a;
+  color: #b030b0;;
   font-size: 14px;
 }
 
