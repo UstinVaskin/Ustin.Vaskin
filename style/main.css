@@ -18,10 +18,36 @@
 }
 
 
+
 #link-pj{
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+.article-content{
+  padding:0% 0%;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-family: Source Serif Pro,serif;
+
+}
+.blog-title-card{
+  margin: 0% 0%;
+  font-size: 2rem;
+  line-height: 1.4;
+  line-height: 3.2rem;
+  font-family: Source Serif Pro,serif;
+}
+
+h1{
+  font-size:16px ;
+}
+
+
+
 }
 
 .card-content{
@@ -298,6 +324,9 @@ h3 {
 .card-header-title{
   font-size: x-large;
 }
+
+
+
 
 .reference p {
 max-width: 1200px;
