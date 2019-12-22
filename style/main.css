@@ -1,4 +1,32 @@
 
+.article-content{
+  padding:0% 15%;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  line-height: 3.2rem;
+  font-family: Source Serif Pro,serif;
+
+}
+
+
+.blog-title-card{
+  margin: 0% 10%;
+  font-size: 2rem;
+  line-height: 1.4;
+  line-height: 3.2rem;
+  font-family: Source Serif Pro,serif;
+}
+
+
+#link-pj{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.card-content{
+  min-height: 300px;
+}
 
 .column {
   text-align: center;
@@ -286,10 +314,12 @@ max-width: 1200px;
   margin: 10px;
   text-align: left;
 }
+
 a {
   color: #b030b0;;
-  font-size: 14px;
+
 }
+
 
 .card{
   vertical-align: baseline;
