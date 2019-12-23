@@ -6,7 +6,7 @@
 
 #skills-logo{
   width: 2.7rem;
-  
+  margin-top: 30px;
 
 
   
@@ -358,9 +358,10 @@ max-width: 1200px;
 }
 
 a {
-  color: #b030b0;;
+  color: #602080;
 
 }
+
 
 
 .card{
