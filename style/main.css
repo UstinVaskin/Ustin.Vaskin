@@ -1,3 +1,9 @@
+
+.is-larger-skills{
+  font-weight: 550;
+}
+
+
 #logo{
   width: 70px;
   height: 70px;
@@ -7,9 +13,6 @@
 #skills-logo{
   width: 2.7rem;
   margin-top: 30px;
-
-
-  
 }
 
 .article-content{
