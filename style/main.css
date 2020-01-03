@@ -176,6 +176,12 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black; }
 
+
+
+  #tech-small{
+    font-size: small;
+    margin-top: -1rem;
+  }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
@@ -505,8 +511,8 @@ body {
       order: 2; }
       .project-container .phones-wrapper .phone {
         margin: 2em auto 0 auto;
-        height: 560px;
-        width: 282px;
+        height: 448px;
+        width: 225.6px;
         padding-top: 0.5em; } }
 .active-project {
   display: block; }
@@ -622,7 +628,7 @@ body {
   padding-bottom: 4em;
   background: #e6e6e6; }
   .about-section .my-picture {
-    width: 30rem;
+    width: 27rem;
     padding-top: 4em;
     border-radius: 100%;
     margin-left: 1.8em; }
@@ -760,10 +766,11 @@ canvas {
     font-size: 3em; }
 
   #sub-title {
-    top: 72%;
+    top: 73%;
     font-size: 1em;
     color: #111;
     font-weight: 520; } }
+
 @media only screen and (min-width: 600px) {
   .main-title {
     width: 1000px; } }
