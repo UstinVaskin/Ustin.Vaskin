@@ -1,767 +1,247 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="generator" content="Codeply" />
+<html dir="ltr" lang="en"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./style/main.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.jpg">
+  <script src="./app.js"></script>
+  <script src="./lib/tweenLite.min.js"></script>
+  <script src="./lib/easePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script><style id="plotly.js-style-global"></style>
+  <meta charset="utf-8">
   <title>Ustin Vaskin</title>
-  <base target="_self">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-<body data-spy="scroll" data-target="#sidemenu" data-offset="30">
-  <div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center text-center min-100"
-    id="header">
-    <h1 class="display-3">Designer, Software
-      Engineer
-      &amp; Project Manager!</h1>
-    <h4>I create and code wonderfully simple things, and I love what I do.</h4>
-    <p class="lead">
-      <!-- <div class="container"><img class="is-bottom" src="img/hero.svg"></div> -->
-    </p>
-  </div>
-  <nav class="navbar navbar-dark bg-primary navbar-expand-md sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Ustin Vaskin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="https://sourcerer.io/ustinvaskin" class="nav-link">Visual Profile</a></li>
-          <li class="nav-item"><a href="https://mssg.me/ustin-vaskin" class="nav-link">Contacts</a></li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#modal1" data-toggle="modal" class="nav-link">Say Hello</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container mt-4" id="content">
-    <div class="row ">
-      <aside class="col-md-3 mt-5">
-        <div class="alert alert-secondary">
-          <div class="avatar"> <img id="avatar" src="./img/avatar.png" alt=""></div>
-          Hi, I’m Ustin. Nice to meet you.
+<style id="plotly.js-style-modebar-f3f6ae"></style></head>
+<body>
+  <div id="logo"><span class="span-line">|</span> U.V. <span class="span-line">|</span></div>
+    <div class="network">
+        <div class="content">
+           <div id="large-header" class="large-header" style="height: 73.8vh;">
+              <canvas id="network-canvas" width="900" height="738"></canvas>
+              <h1 class="main-title"><span class="thin"><span class="span-line">|</span> Ustin Vaskin <span class="span-line">|</span</h1>
+                <br>
+                <br>
+              <h6 class="main-title" id="sub-title"><span>Designer / Software Engineer & Project Manager</span></h6>
+           </div>
         </div>
-        <div class="mt-4 mb-3 pt-4 sticky-top" id="sidemenu">
-          <div class="pt-5">
-            <h5> Home navigation</h5>
-            <ul class="nav nav-pills flex-md-column flex-row justify-content-between bg-light">
-              <li class="nav-item"><a href="#sec1" class="nav-link active">About</a></li>
-              <li class="nav-item">
-                <a href="#sec2" class="nav-link">My Skills</a>
-                <ul class="nav flex-md-column small d-none d-md-flex">
-                  <li class="nav-item"><a href="#sec2a" class="nav-link">Designer</a></li>
-                  <li class="nav-item"><a href="#sec2b" class="nav-link">Front-end/ Back-end Developer</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#sec3" class="nav-link">My Recent Work</a>
-                <ul class="nav flex-md-column small d-none d-md-flex">
-                  <li class="nav-item"><a href="#sec3a" class="nav-link">Web Development Projects</a></li>
-                  <li class="nav-item"><a href="#sec3b" class="nav-link">Projects Managment</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a href="#sec4" class="nav-link">Testimonials</a></li>
-
-
-
-
-            </ul>
-          </div>
+     </div>
+    <header>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a class="project-nav" href="#project">Projects</a>
+      <a href="#technologies">Tech</a>
+      <a href="#top"><span class="span-line">|</span> U.V. <span class="span-line">|</span></a>
+      <a class="project-nav" href="#blog">Blog</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <nav role="navigation">
+        <div id="menuToggle">
+        <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#top"><li>Top</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#project"><li>Projects</li></a>
+            <a href="#technologies"><li>Tech</li></a>
+            <a href="#contact"><li>Contact</li></a>
+            <a href="#testimonials">Testimonials</a>
+            <a class="project-nav" href="#blog">Blog</a>
+          </ul>
         </div>
-      </aside>
-      <div class="col py-5">
+      </nav>
+  </header>
+  <main>
+    <div class="spacer" id="about"></div>
+    <section class="about-section">
+      <div class="titles-container"><a class="titles" href="#about">About</a></div>
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <ul class="nav nav-tabs small" role="tablist">
-              <li class="nav-item is-main"><a class="nav-link text-uppercase active" data-toggle="tab" href="#tab1"
-                  role="tab">Home</a></li>
-              <li class="nav-item is-main"><a class="nav-link text-uppercase " data-toggle="tab" href="#tab2"
-                  role="tab">Blog</a></li>
-            </ul>
-            <div class="tab-content py-3">
-              <div class="tab-pane active" id="tab1" role="tabpanel">
-                <h3> Hi, I’m Ustin. Nice to meet you.</h3>
-                <span class="anchor" id="sec1"></span>
-                <p>
-                  Socially conscientious, detail oriented, hard working project manager graduate with experience in
-                  <strong>
-                    WEB & SOFTWARE DEVELOPMENT, CREATIVE CONCEPTION </strong>and <strong>AGILE METHODOLOGY. </strong>
-                  <br> <br>
-                  Seeking to take the next career step with respected organisation dedicated to world class quality. My
-                  strengths lie in my strong problem solving, communication skills and team working ability. I'm curious
-                  and
-                  enthusiastic, by nature.
+          <div class="six columns">
+              <div><img class="my-picture" src="./assests/avatar.png" alt="image of me"></div>
+          </div>
+        <div class="six columns about-text">
+            <h6 class="about-intro">Hey, my name's Ustin. I'm a student at General Assembly in London.</h6>
+            <div class="about-paragraph-1">
+              The Web Development Immersive course has been a platform to focus all of my time to learn and practice code.
+              Enabling me to bundle together all of the things I enjoy doing and push me further to advance my technical
+              skills equipped to start a profession as a developer.
+            </div>
+            <div class="about-paragraph-2">
+              I am socially conscientious, detail oriented, hard working student with experience in WEB & SOFTWARE DEVELOPMENT, CREATIVE CONCEPTION and AGILE METHODOLOGY.
+            </div>
+            <div class="about-paragraph-2">
+            Seeking to take the next career step with respected organisation dedicated to world class quality. My strengths lie in my strong problem solving, communication skills and team working ability. I'm curious and enthusiastic, by nature. 
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="spacer" id="project"></div>
+    <section class="project-section">
+      <div class="titles-container"><a id="project-title" class="titles" href="#project">Projects</a></div>
+      <div class="container project-container">
+        <div class="phones-wrapper">
+          <img class="phone phone1 animated faster" src="./assests/flixbox.png" style="display: none;">
+          <img class="phone phone2 animated" src="./assests/bambook.png"">
+          <img class="phone phone3" src="./assests/sunmoon.png">
+          <img class="phone phone4" src="./assests/sink.png">
+        </div>
+       <div class="buttons-content">
+          <div class="project-wrapper">
+            <div class="project project1" style="display: block;">
+              <span>Flix-box
+                <a href="https://github.com/UstinVaskin/FlixBox-Movie-Library"><i class="project-github bambook-github devicon-github-plain"></i></a>
+              </span>
+              <p>
+                A Web Site- TV & Movie Database with custom-built filters using Third-party APIs.
+                <p>Technologies: Adobe Illustrator, API, axios, Bulma, CSS, Git, Github, Node.js, React Hooks, React, SCSS, UX, Webpack 
                 </p>
-                <span class="anchor" id="sec2"></span>
-                <h3>My Skills</h3>
-                <span class="anchor" id="sec2a"></span>
-                <h4>Designer</h4>
-                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <p id="centered"> <strong>Things I love designing:</strong> </p>
-                <h5 id="centered"> <strong>UI, Web, Mobile, Apps, Logos</strong></h5>
-                <p id="centered"><strong>Design Tools:</strong></p>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm">
-                      <i class="fab fa-adobe fa-4x"></i>
-                      <p>Adobe Illustrator</p>
-                    </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logos-1/autoad.png"" alt="">
-                            <p>AutoCAD</p>
+              </p>
+            </div>
+            <div class="project project2" style="display: none;">
+               <span>Bambook
+                <a href="https://bambooklove.herokuapp.com"><i class="fas project-link bambook-link fa-link"></i></a>
+                <a href="https://github.com/dredizzle/project-3"><i class="project-github bambook-github devicon-github-plain"></i></a>
+               </span>
+               <p>
+                BamBook is a society for authors and booklovers that allows users to discuss books, post their own stories, browse those of others and communicate with each other. 
+               </p>
+               <p>
+                Technologies: Adobe Illustrator, Axios, Babel, Bluebird, Bulma, Express, HTML, JavaScript, MongoDB, Mongoose, Node.js, Promise, React.js, SCSS, Webpack </p>
+            </div>
+            <div class="project project3" style="display: none;">
+              <span>Moon & Sun
+                <a href="https://github.com/UstinVaskin/MOON-SUN"><i class="project-github sunmoon-github devicon-github-plain"></i></a>
+              </span>
+               <p>
+                It was a paired project using Rect router and API to build an app. Marissa and I are decided on taking astro-theme. A Web App that accurately shows the state and phase of the Sun and Moon in any place with daily-updated horoscope. 
+               </p>
+               <p> Technologies: HTML, CSS3 with animation, JavaScript (ES6), JSX, Git, GitHub, React, Bulma</p>
+            </div>
+            <div class="project project4" style="display: none;">
+              <span>Sink a ship, baby 
+                <a href="https://ustinvaskin.github.io/Sink-a-ship-baby/"><i class="fas project-link sink-a-ship-link fa-link"></i></a>
+                <a href="https://github.com/UstinVaskin/Sink-a-ship-baby"><i class="project-github sink-a-ship-github devicon-github-plain"></i></a>
+              </span>
+              <p>
+                This was my first project from General Assembly’s Web Development Immersive Course. It was an individual project built in a week, and was both the first proper game I had built and my first real-world type practice with JavaScript and the DOM. 
+              </p>
+              <p>Technologies: HTML5 with HTML5 audio, CSS3 with animation, JavaScript (ES6), Git, GitHub, Google Fonts, OOP 
+              </p>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <button class="button button1" style="border-bottom: medium none; border-left: medium none;">Flix-box</button>
+            <button class="button button2" style="border-bottom: medium none; border-left: medium none;">Bambook</button>
+            <button class="button button3" style="border-bottom: medium none; border-left: medium none;">Moon & Sun</button>
+            <button class="button button4" style="border-bottom: medium none; border-left: medium none;">Sink a ship, baby </button>
+          </div>
+       </div>
+      </div>
+    </section>
+    <div class="outside-technologies">
+      <div class="row tech-road">
+        <i class="tech-icon devicon-javascript-plain"></i>
+        <i class="tech-icon devicon-react-original"></i>
+        <i class="tech-icon devicon-html5-plain"></i>
+        <i class="tech-icon devicon-css3-plain"></i>
+        <i class="tech-icon devicon-django-plain"></i>
+        <i class="tech-icon devicon-jquery-plain"></i>
+        <i class="tech-icon devicon-heroku-original"></i>
+        <i class="tech-icon devicon-express-original"></i>
+        <i class="tech-icon devicon-webpack-plain" style="color: rgb(95, 95, 95);"></i>
+        <i class="tech-icon devicon-mongodb-plain"></i>
+        <i class="tech-icon devicon-postgresql-plain"></i>
+        <i class="tech-icon devicon-git-plain"></i>
+        <i class="tech-icon devicon-github-plain"></i>
+        <i class="tech-icon devicon-mocha-plain"></i>
+        <i class="tech-icon devicon-python-plain"></i>
+        <i class="tech-icon devicon-nodejs-plain"></i>
+      </div>
+    </div>
+    <div class="spacer" id="technologies"></div>
+    <section class="tech-section">
+      <div class="titles-container"><a class="titles" href="#technologies">Technologies</a></div>
+      <div>
+        <div class="tech-container">
+          <div class="tech-list">
+              <div class="techskills-wrapper">
+                  <div class="techskills-outline-box">
+                    <div class="techskills-inner-wrapper">
+                        <div class="techskills-box-left">
+                          <div class="techskills-box-left-top">
+                              <p><i class="fas fa-stop"></i> Python</p>
+                              <p><i class="fas fa-stop"></i> Flask</p>
+                              <p><i class="fas fa-stop"></i> Node.js</p>
+                              <p><i class="fas fa-stop"></i> MongoDB</p>
+                              <p><i class="fas fa-stop"></i> Mongoose</p>
+                              <p><i class="fas fa-stop"></i> Express</p>
+                              <p><i class="fas fa-stop"></i> PostgreSQL</p>
                           </div>
-                          <div class=" col-sm">
-                      <i class="fab fa-bootstrap fa-4x"></i>
-                      <p>Bootstrap</p>
+                          <div class="techskills-box-left-bottom">
+                              <p><i class="fas fa-stop"></i> Agile</p>
+                              <p><i class="fas fa-stop"></i> REST </p>
+                              <p><i class="fas fa-stop"></i> CRUD </p>
+                              <p><i class="fas fa-stop"></i> Mocha</p>
+                              <p><i class="fas fa-stop"></i> Chai</p>
+                          </div>
+                        </div>
+                        <div class="techskills-box-right">
+                              <p><i class="fas fa-stop"></i> JavaScript</p>
+                              <p><i class="fas fa-stop"></i> React</p>
+                              <p><i class="fas fa-stop"></i> CSS3</p>
+                              <p><i class="fas fa-stop"></i> HTML5</p>
+                              <p><i class="fas fa-stop"></i> jQuery</p>
+                              <p><i class="fas fa-stop"></i> Chart.js</p>
+                              <p><i class="fas fa-stop"></i> Plotly.js</p>
+                              <p><i class="fas fa-stop"></i> Webpack</p>
+                              <p><i class="fas fa-stop"></i> Heroku</p>
+                              <p><i class="fas fa-stop"></i> Bulma</p>
+                            <p><i class="fas fa-stop"></i> Git</p>
+                            <p><i class="fas fa-stop"></i> GitHub</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logos-1/bulma.png" alt="">
-                      <p>Bulma</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logos-1/enzyme.png" alt="">
-                      <p>Enzyme</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-figma fa-4x"></i>
-                      <p>Figma</p>
-                    </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logos-1/maya.png" alt="">
-                      <p>Maya</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fas fa-pen-square fa-4x"></i>
-                      <p>Pen &amp; Paper</p>
-                    </div>
-                  </div>
                 </div>
-                <span class="anchor" id="sec2b"></span>
-                <h4>Front-end/ Back-end Developer</h4>
-                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <p> <strong>Languages I speak:</strong> </p>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm">
-                      <i class="fab fa-html5 fa-4x"></i>
-                      <p>HTML</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-css3-alt fa-4x"></i>
-                      <p>CSS</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-js fa-4x"></i>
-                      <p>JavaScript</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-python fa-4x"></i>
-                      <p>Python</p>
-                    </div>
-                  </div>
-                </div>
-                <p><strong>Dev Tools:</strong></p>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logo-2/ajax.png" alt="">
-                      <p>Ajax</p>
-                    </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logo-2/a.png" alt="">
-                      <p>Anaconda</p>
-                    </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="https://static.djangoproject.com/img/logos/django-logo-positive.svg"
-                        alt="">
-                      <p>Django</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-github fa-4x"></i>
-                      <p>Github</p>
-                    </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logo-2/jquery.png" alt="">
-                      <p>jQuery</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logo-2/mongodb.png" alt="">
-                      <p>MongoDB</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-node fa-4x"></i>
-                      <p>Node.js</p>
-                    </div>
-                    <div class=" col-sm">
-                      <i class="fab fa-react fa-4x"></i>
-                      <p>React</p>
-                    </div>
-                    <div class="col-sm">
-                      <i class="fab fa-sass fa-4x"></i>
-                      <p>Sass</p>
-                    </div>
-                    <div class="col-sm">
-                      <img id="skills-logo" src="./img/logo-2/webpack.png" alt="">
-                      <p>Webpack</p>
-                    </div>
-                  </div>
-                </div>
-                <hr>
-                <span class="anchor" id="sec3"></span>
-                <h3>Projects</h3>
-                <hp class="subtitle is-size-5-desktop">Here are a few recent design projects. Want to see
-                  more? <a href="mailto:ustin.vaskin2011@gmail.com">Email me</a>.</hp>
-                <div class="pl-4">
-                  <span class="anchor" id="sec3a"></span>
-                  <h3>Web Development Projects</h3>
-                  <!-- Pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                        <img src="./img/bambook.gif" class="card-img" alt="...">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> FlixBox. </h5>
-                          <p class="card-text"> BamBook is a society for authors and booklovers that allows users to
-                            discuss
-                            books,
-                            post their own
-                            stories, browse those of others and communicate with each other.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#"> #Adobe Illustrator,</a>
-                        <a href="#"> #Axios,</a>
-                        <a href="#"> #Babel,</a>
-                        <a href="#"> #Bluebird,</a>
-                        <a href="#"> #Bulma,</a>
-                        <a href="#"> #Express,</a>
-                        <a href="#"> #HTML,</a>
-                        <a href="#"> #JavaScript,</a>
-                        <a href="#"> #MongoDB,</a>
-                        <a href="#"> #Mongoose,</a>
-                        <a href="#"> #Node.js,</a>
-                        <a href="#"> #Promise,</a>
-                        <a href="#"> #React.js,</a>
-                        <a href="#"> #SCSS,</a>
-                        <a href="#"> #Webpack</a>
-                      </p>
-                    </div>
-                    <a href="https://bambooklove.herokuapp.com" target="blank" class="card-footer-item">
-                      <img id="link-pj" src="./img/link.png" alt="">Open this project</a>
-                    <a href="https://github.com/dredizzle/project-3" target="blank" class="card-footer-item"> <img
-                        id="link-pj" src="./img/g_h.png" alt="">See the
-                      source code</a>
-                    <br>
-                    <br>
-                  </div>
-                  <!-- pj -->
-                  <!-- pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                        <img src="./img/flix-box.gif" class="card-img" alt="...">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> FlixBox. </h5>
-                          <p class="card-text"> A Web Site- TV & Movie Database with custom-built filters using
-                            Third-party
-                            APIs. </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#"> #Adobe Illustrator,</a>
-                        <a href="#"> #API,</a>
-                        <a href="#"> #axios,</a>
-                        <a href="#"> #Bulma,</a>
-                        <a href="#"> #CSS,</a>
-                        <a href="#"> #Git,</a>
-                        <a href="#"> #Github,</a>
-                        <a href="#"> #Node.js,</a>
-                        <a href="#"> #React Hooks,</a>
-                        <a href="#"> #React,</a>
-                        <a href="#"> #SCSS,</a>
-                        <a href="#"> #UX,</a>
-                        <a href="#"> #Webpack</a>
-                      </p>
-                    </div>
-                    <a href="#" target="blank" class="card-footer-item">
-                      <img id="link-pj" src="./img/link.png" alt="">Open this project</a>
-                    <a href="https://github.com/UstinVaskin/FlixBox-Movie-Library" target="blank"
-                      class="card-footer-item">
-                      <img id="link-pj" src="./img/g_h.png" alt="">See the
-                      source code</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- Pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                        <img src="./img/SinkAShip.gif" class="card-img" alt="...">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Sink a ship, baby. </h5>
-                          <p class="card-text"> This was my first project from General Assembly’s Web Development
-                            Immersive
-                            Course.
-                            It was an individual
-                            project built in a week, and was both the first proper game I had built and my first
-                            real-world type
-                            practice with JavaScript and the DOM. Render a grid-based game in the browser..</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#">#HTML5 with HTML5 audio</a>
-                        <a href="#">#CSS3 with animation</a>
-                        <a href="#">#JavaScript (ES6)</a>
-                        <a href="#">#Git</a>
-                        <a href="#">#GitHub</a>
-                        <a href="#">#Google Fonts</a>
-                        <a href="#">#OOP</a>
-                      </p>
-                    </div>
-                    <a href="https://ustinvaskin.github.io/Sink-a-ship-baby/" target="blank" class="card-footer-item">
-                      <img id="link-pj" src="./img/link.png" alt="">Open this
-                      project</a>
-                    <a href="https://github.com/UstinVaskin/Sink-a-ship-baby" target="blank" class="card-footer-item">
-                      <img id="link-pj" src="./img/link.png" alt="">See the
-                      source code</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- Pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Pengin Game Javascript. </h5>
-                          <p class="card-text"> It's my variant of Google’s Dinosaur Game (T-Rex run!) with an icy twist
-                            –
-                            controlling the dinosaur
-                            (penguin) with a ML Speech Commands model.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#">#CSS3 with animation</a>
-                        <a href="#">#Git</a>
-                        <a href="#">#GitHub</a>
-                        <a href="#">#HTML5 with HTML5 audio</a>
-                        <a href="#">#JavaScript (ES6)</a>
-                        <a href="#">#OOP</a>
-                      </p>
-                    </div>
-                    <a href="https://ustinvaskin.github.io/Penguin-Game/index.html" target="blank"
-                      class="card-footer-item">
-                      <img id="link-pj" src="./img/link.png" alt="">Open this project</a>
-                    <a href="https://github.com/UstinVaskin/Penguin-Game" target="blank" class="card-footer-item"> <img
-                        id="link-pj" src="./img/link.png" alt="">See the
-                      source code</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                        <img src="./img/SunMoon.gif" class="card-img" alt="...">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Sun & Moon. </h5>
-                          <p class="card-text"> It was a paired project using Rect router and API to build an app.
-                            Marissa and I are
-                            decided on taking
-                            astro-theme. A Web App that accurately shows the state and phase of the Sun and Moon
-                            in any place with
-                            daily-updated horoscope. </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#"> #HTML</a>
-                        <a href="#"> #CSS3 with animation</a>
-                        <a href="#"> #JavaScript (ES6)</a>
-                        <a href="#"> #JSX</a>
-                        <a href="#"> #Git</a>
-                        <a href="#"> #GitHub</a>
-                        <a href="#"> #React</a>
-                        <a href="#"> #Bulma</a>
-                      </p>
-                    </div>
-                    <a href="https://github.com/UstinVaskin/MOON-SUN" class="card-footer-item" target="blank"> <img
-                        id="link-pj" src="./img/g_h.png" alt="">See the source code</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                        <img src="./img/SunMoon.gif" class="card-img" alt="...">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Rock Paper Scissors. </h5>
-                          <p class="card-text"> Create a simple Rock Paper Scissors game using javascript. Play the game
-                            against the
-                            computer. </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href=#>#Algorithm</a>
-                        <a href=#>#Git</a>
-                        <a href=#>#GitHub</a>
-                        <a href=#>#HTML5 with HTML5</a>
-                        <a href=#>#JavaScript (ES6)</a>
-                        <a href=#>#UX</a>
-                      </p>
-                    </div>
-                    <a href="https://github.com/UstinVaskin/MOON-SUN" class="card-footer-item" target="blank"> <img
-                        id="link-pj" src="./img/g_h.png" alt="">See the source code</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- Project Managment  -->
-                  <span class="anchor" id="sec3b"></span>
-                  <h3>Project Managment</h3>
-                  <!-- pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Film Republic (NPO). </h5>
-                          <p class="card-text"> Organisation's aim is to enable children with disabilities in
-                            Nizhnevartovsk to get involved in film
-                            production and theatre.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#">#A/B Testing - Optimizely</a>
-                        <a href="#">#CSS 3</a>
-                        <a href="#">#Google Analytics</a>
-                        <a href="#">#HTML 5</a>
-                        <a href="#">#JIRA</a>
-                        <a href="#">#Microsoft Forecaster</a>
-                        <a href="#">#SWOT analysis</a>
-                      </p>
-                    </div>
-                    <a href="https://anodork.wixsite.com/anodork" target="blank" class="card-footer-item">More</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Accessible Education for Children. </h5>
-                          <p class="card-text"> Ministry of Education. A mechanism of financial support for
-                            extracurricular education, designed to
-                            explore educational paths. Developed the program concept and methodologies for informational
-                            and
-                            organisational support. Coordinated with software engineers to implement the data-informed
-                            designs and
-                            features of the personalised education portal (hmao.pfdo.ru).</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#">#A/B Testing - Optimizely</a>
-                        <a href="#">#Adobe After Effects</a>
-                        <a href="#">#Adobe Premiere Pro</a>
-                        <a href="#">#Agile CRM</a>
-                        <a href="#">#CSS 3</a>
-                        <a href="#">#Google Analytics</a>
-                        <a href="#">#HTML 5</a>
-                        <a href="#">#MySQL</a>
-                        <a href="#">#SWOT analysis</a>
-                      </p>
-                    </div>
-                    <a href="https://hmao.pfdo.ru/" target="blank" class="card-footer-item">More</a>
-                  </div>
-                  <!-- pj -->
-                  <!-- pj -->
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                      <div class="col-md-12">
-                      </div>
-                      <div class="col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title"> Hungarian Nature.</h5>
-                          <p class="card-text"> Budapest, Hungary Online educational project. A co-operative project
-                            with WWF Hungarian Foundation and
-                            The Prague Civil Society Center.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="purple">
-                        Technologies:
-                        <a href="#">#Adobe Photoshop</a>
-                        <a href="#">#Agile CRM</a>
-                        <a href="#">#CSS 3</a>
-                        <a href="#">#Google Analytics</a>
-                        <a href="#">#HTML 5</a>
-                      </p>
-                    </div>
-                    <a href="https://hmao.pfdo.ru/" target="blank" class="card-footer-item">More</a>
-                  </div>
-                  <!-- pj -->
-                  <span class="anchor" id="sec4"></span>
-                  <h3>Testimonials</h3>
-                  <div class="reference">
-                    <div class="testimonial-block"><img class="avatar-ref" src="img/JacobS.jpg">
-                      <p>Jacob Smith</p>
-                      <p class="quote">“I worked with Ustin on the proposal for Hungarian Nature, a joint project with
-                        the World
-                        Wildlife Fund (WWF), the Prague Civil Society Centre, and Film Republic. Ustin coordinated with
-                        the various
-                        organisations, agencies, and municipalities to ensure feasibility (including permits etc for
-                        protected
-                        areas). He streamlined the process, ensuring all our ducks were in a row so that when the
-                        project partners
-                        reviewed the proposal, it was approved within days.”
-                      </p>
-                      <h6 class="subtitle is-size-6">Director of Web Engineering, Fueled | London</h6>
-                    </div>
-                    <hr>
-                  </div>
-                </div>
-              </div>
-              <!--  tab  -->
-              <div class="tab-pane" id="tab2" role="tabpanel">
-                <span class="anchor" id="sec5"></span>
-                <!-- Cards 3 per row  -->
-                <div class="card-deck">
-                  <!-- Card  -->
-                  <div class="card">
-                    <a href="..."><img class="card-img-top" src="./img/blog-head-img/learn-code.jpg" alt=""></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="...">12 Rules to learn to code</a></h5>
-                      <p> Learning to code is a bit like going to the gym. Even if you max out and spent a whole weekend
-                        at the gym, you will not see a visible difference in your body.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">November 27, 2019 | By Dr. Angela Yu</small>
-                    </div>
-                  </div>
-                  <!-- Card  -->
-                  <!-- Card2  -->
-                  <div class="card">
-                    <a href="..."><img class="card-img-top" src="./img/blog-head-img/react-api.png" alt=""></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="...">Intro to React and API</a></h5>
-
-                      <p> When writing code for the Web, there are a large number of Web APIs available. Below is a
-                        list of all the APIs and interfaces (object types) that you may be able to use while
-                        developing your Web app or site.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">November 15, 2019 | By Ustin Vaskin</small>
-                    </div>
-                  </div>
-                  <!-- Card2 -->
-                  <!-- Card3  -->
-                  <div class="card">
-                    <a href="./blog-4.html"><img class="card-img-top" src="./img/blog-head-img/sink.png" alt=""></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="./blog-4.html">README and my first game-project at
-                          GA, London SEI-44</a></h5>
-
-                      <p> This was my first project from General Assembly’s Web Development Immersive Course. It was an
-                        individual project built in a week, and was both the first proper game I had built and my first
-                        real-world type practice with JavaScript and the DOM.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">November 10, 2019 | By Ustin Vaskin</small>
-                    </div>
-                  </div>
-                  <!-- Card3 -->
-                </div>
-                <!-- Cards 3 per row  -->
-                <!-- Cards 3 per row  -->
-                <div class="card-deck">
-                  <!-- Card  -->
-                  <div class="card">
-                    <a href="./blog-3.html"><img class="card-img-top" src="./img/blog-head-img/behave.png" alt=""></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="./blog-3.html">Week 2 GA | Behave Yourself</a></h5>
-                      <p> As we know HTML is responsible for text, CSS for style and JavaScript is behavior. Java
-                        Script is where we can how the age behaves, adding interactivity. Java script is written in
-                        plain text, just like HTML CSS.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">October 28, 2019 | By Ustin Vaskin</small>
-                    </div>
-                  </div>
-                  <!-- Card  -->
-                  <!-- Card2  -->
-                  <div class="card">
-                    <a href="blog-2.html"><img class="card-img-top" src="./img/blog-head-img/bulma.png"" alt=""></a>
-                    <div class=" card-body">
-                      <h5 class="card-title"><a href="blog-2.html">Pros and Cons of Using a CSS Framework</a></h5>
-                      <p> Bulma framework, man it was hard!I have never read the documentation before and have
-                        never worked with CSS frameworks, so it took me a while to get through the web site and figure
-                        it out...</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">October 23, 2019 | By Ustin Vaskin</small>
-                  </div>
-                </div>
-                <!-- Card2 -->
-                <!-- Card3  -->
-                <div class="card ">
-                  <a href="blog-1.html"><img class="card-img-top"
-                      src="./img/blog-head-img/generalassembly-open-graph.png" alt=""></a>
-                  <div class="card-body">
-                    <h5 class="card-title"><a href="blog-1.html">1 st Week GA | London</a></h5>
-
-                    <p>It all started with total silence… It was super awkward at the beginning but the spaghetti
-                      marshmallow change helped a lot (I’ve not been sweating like the in ages) it was really
-                      interesting and I’m excited about the course at GA...</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">October 19, 2019 | By Ustin Vaskin</small>
-                  </div>
-                </div>
-                <!-- Card3 -->
-              </div>
-              <!-- Cards 3 per row  -->
-              <div class="card card-outline-primary mb-3">
-                <div class="card-body">
-                  <h3 class="card-title">The future of extra-curricular education in KhMAD Russia</h3>
-                  <p class="card-text">It’s no a secret in today’s world child-development, be it arts, sports, or
-                    others, is no cheap endeavour. For instance, with hockey, the league might be free, but unexpected
-                    costs may be skates, a stick, and puck.</p>
-                  <a href="https://www.linkedin.com/pulse/future-extra-curricular-education-khmad-russia-ustin-vaskin/"
-                    class="btn btn-outline-secondary">Read</a>
-                </div>
-              </div>
-            </div>
-            <!-- Blog tab  -->
           </div>
-        </div>
-        <!-- Say Hi -->
-        <div id="modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 id="myModalLabel">Hello.</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              </div>
-              <div class="modal-body">
-                <div class="form-group row">
-                  <label for="example-text-input" class="col-2 col-form-label">Text</label>
-                  <div class="col-10">
-                    <input class="form-control" type="text" value="Mike McDonald" id="example-text-input">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="example-search-input" class="col-2 col-form-label">Search</label>
-                  <div class="col-10">
-                    <input class="form-control" type="search" value="How to responsive design"
-                      id="example-search-input">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="example-email-input" class="col-2 col-form-label">Email</label>
-                  <div class="col-10">
-                    <input class="form-control" type="email" value="email@example.com" id="example-email-input">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="example-url-input" class="col-2 col-form-label">URL</label>
-                  <div class="col-10">
-                    <input class="form-control" type="url" value="http://codeply.com" id="example-url-input">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
-                  <div class="col-10">
-                    <input class="form-control" type="tel" value="1-(202)-555-5555" id="example-tel-input">
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                <button class="btn btn-primary">Save changes</button>
-              </div>
+          <div class="six columns tech-stack">
+            <div class="row">
+              <div id="sunburst" class="js-plotly-plot"><div class="plot-container plotly"><div class="svg-container" style="position: relative; width: 370px; height: 370px;"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="370" style="background: rgb(254, 254, 254) none repeat scroll 0% 0%;"><defs id="defs-f3f6ae"><g class="clips"></g><g class="gradients"></g></defs><g class="bglayer"></g><g class="draglayer"></g><g class="layer-below"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="cartesianlayer"></g><g class="polarlayer"></g><g class="ternarylayer"></g><g class="geolayer"></g><g class="funnelarealayer"></g><g class="pielayer"></g><g class="treemaplayer"></g><g class="sunburstlayer"><g class="trace sunburst" stroke-linejoin="round" style="opacity: 1;"><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(0, 0, 0); fill-opacity: 0; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M185,185A0,0 0,1,0 185,185A0,0 0,1,0 185,185ZM231.25,185A46.25,46.25 0,1,1 138.75,185A46.25,46.25 0,1,1 231.25,185Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 30px; fill: rgb(39, 39, 39); fill-opacity: 1; white-space: pre;" data-unformatted="TECH" data-math="N" x="0" y="0" transform="translate(185,185)translate(0,12)">TECH</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M231.25,185L277.5,185A92.5,92.5 0,0,0 138.75000000000003,104.89265014993941L161.875,144.9463250749697A46.25,46.25 0,0,1 231.25,185Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Front-End" data-math="N" x="0" y="0" transform="translate(215.69954983899981,131.8268199093594)rotate(30)translate(0.000457763671875,4.75)">Front-End</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M161.875,144.9463250749697L138.75000000000003,104.89265014993941A92.5,92.5 0,0,0 110.16592802031737,239.37013583705374L147.5829640101587,212.18506791852687A46.25,46.25 0,0,1 161.875,144.9463250749697Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="CLI" data-math="N" x="0" y="0" transform="translate(117.14101019909224,170.57612644951791)translate(-0.0002593994140625,4.75)">CLI</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M147.5829640101587,212.18506791852687L110.16592802031737,239.37013583705374A92.5,92.5 0,0,0 231.24999999999994,265.1073498500606L208.12499999999997,225.0536749250303A46.25,46.25 0,0,1 147.5829640101587,212.18506791852687Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Back-End" data-math="N" x="0" y="0" transform="translate(171.06520856828197,250.5580393389628)rotate(12)translate(0.00006103515625,4.75)">Back-End</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M208.12499999999997,225.0536749250303L231.24999999999994,265.1073498500606A92.5,92.5 0,0,0 277.5,185.0000000000001L231.25,185.00000000000006A46.25,46.25 0,0,1 208.12499999999997,225.0536749250303Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="Methodologies" data-math="N" x="0" y="0" transform="translate(251.42886123668853,223.35272091696254)scale(0.909600358754673)rotate(-60)translate(0.00006103515625,4.75)">Methodologies</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M277.5,185L323.75,185A138.75,138.75 0,0,0 320.7179796018155,156.1522528990359L275.478653067877,165.76816859935727A92.5,92.5 0,0,1 277.5,185Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="JavaScript" data-math="N" x="0" y="0" transform="translate(299.9311563687156,172.92024870166625)scale(0.7260508239983725)rotate(-6)translate(-0.00006103515625,4.75)">JavaScript</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M275.478653067877,165.76816859935727L320.7179796018155,156.1522528990359A138.75,138.75 0,0,0 311.75443224791087,128.56529077323273L269.5029548319406,147.3768605154885A92.5,92.5 0,0,1 275.478653067877,165.76816859935727Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="React" data-math="N" x="0" y="0" transform="translate(295.79645091796885,149.00005082404945)rotate(-18)translate(-0.000457763671875,4.75)">React</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M269.5029548319406,147.3768605154885L311.75443224791087,128.56529077323273A138.75,138.75 0,0,0 297.25110796952396,103.44479624441935L259.8340719796826,130.62986416294623A92.5,92.5 0,0,1 269.5029548319406,147.3768605154885Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="jQuery" data-math="N" x="0" y="0" transform="translate(285.0170099239026,127.25515239689338)rotate(-30)translate(0.16712188720703125,4.75)">jQuery</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M259.8340719796826,130.62986416294623L297.25110796952396,103.44479624441935A138.75,138.75 0,0,0 277.8418716322916,81.88865546501157L246.8945810881944,116.25910364334105A92.5,92.5 0,0,1 259.8340719796826,130.62986416294623Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="HTML5" data-math="N" x="0" y="0" transform="translate(270.8252565997905,107.72259185464873)rotate(-42)translate(0.0002593994140625,4.75)">HTML5</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M246.8945810881944,116.25910364334105L277.8418716322916,81.88865546501157A138.75,138.75 0,0,0 254.375,64.83897522490915L231.25,104.89265014993943A92.5,92.5 0,0,1 246.8945810881944,116.25910364334105Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="CSS3" data-math="N" x="0" y="0" transform="translate(253.79181626808804,90.31618781222889)rotate(-54)translate(0.00006103515625,4.75)">CSS3</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M231.25,104.89265014993943L254.375,64.83897522490915A138.75,138.75 0,0,0 227.87610796952396,53.04090836404745L213.58407197968265,97.0272722426983A92.5,92.5 0,0,1 231.25,104.89265014993943Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="SCSS" data-math="N" x="0" y="0" transform="translate(232.51005215153907,78.29067573753619)rotate(-66)translate(0,4.75)">SCSS</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M213.58407197968265,97.0272722426983L227.87610796952396,53.04090836404745A138.75,138.75 0,0,0 199.5033242783869,47.01008701765207L194.66888285225795,93.00672467843472A92.5,92.5 0,0,1 213.58407197968265,97.0272722426983Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Webpack" data-math="N" x="0" y="0" transform="translate(209.0235712324763,71.97798344249146)scale(0.8226164092341329)rotate(-78)translate(-0.00006103515625,4.75)">Webpack</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M194.66888285225795,93.00672467843472L199.5033242783869,47.01008701765207A138.75,138.75 0,0,0 170.49667572161306,47.01008701765207L175.33111714774205,93.00672467843472A92.5,92.5 0,0,1 194.66888285225795,93.00672467843472Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Bulma" data-math="N" x="0" y="0" transform="translate(185,69.53085208156118)rotate(-90)translate(0,4.75)">Bulma</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M175.33111714774205,93.00672467843472L170.49667572161306,47.01008701765207A138.75,138.75 0,0,0 142.12389203047604,53.04090836404745L156.41592802031735,97.0272722426983A92.5,92.5 0,0,1 175.33111714774205,93.00672467843472Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Plotly.js" data-math="N" x="0" y="0" transform="translate(160.98114611867635,72.00017683476139)scale(0.9346790085256589)rotate(78)translate(0.000457763671875,4.75)">Plotly.js</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(242, 84, 91); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M156.41592802031735,97.0272722426983L142.12389203047604,53.04090836404745A138.75,138.75 0,0,0 115.62499999999999,64.83897522490915L138.75,104.89265014993943A92.5,92.5 0,0,1 156.41592802031735,97.0272722426983Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Chart.js" data-math="N" x="0" y="0" transform="translate(138.01197656245202,79.46317142619408)scale(0.9340526713024299)rotate(66)translate(0.000396728515625,4.75)">Chart.js</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M138.75000000000003,104.89265014993941L115.62500000000003,64.83897522490912A138.75,138.75 0,0,0 58.245567752089144,128.56529077323268L100.49704516805943,147.37686051548846A92.5,92.5 0,0,1 138.75000000000003,104.89265014993941Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Version-Control" data-math="N" x="0" y="0" transform="translate(90.80363186317727,100.18520917143658)scale(0.8172056568937833)rotate(-48)translate(-0.0001373291015625,4.75)">Version-Control</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M100.49704516805943,147.37686051548846L58.245567752089144,128.56529077323268A138.75,138.75 0,0,0 49.28202039818447,156.15225289903583L94.52134693212298,165.76816859935724A92.5,92.5 0,0,1 100.49704516805943,147.37686051548846Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Bash" data-math="N" x="0" y="0" transform="translate(72.36253517535489,148.40186914473162)rotate(18)translate(0.000396728515625,4.75)">Bash</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M94.52134693212298,165.76816859935724L49.28202039818447,156.15225289903583A138.75,138.75 0,0,0 46.25,184.99999999999991L92.5,184.99999999999994A92.5,92.5 0,0,1 94.52134693212298,165.76816859935724Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="npm" data-math="N" x="0" y="0" transform="translate(66.0421690130542,172.49702814525338)rotate(6)translate(0.000457763671875,4.75)">npm</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M92.5,184.99999999999994L46.25,184.99999999999991A138.75,138.75 0,0,0 49.28202039818444,213.847747100964L94.52134693212297,204.23183140064268A92.5,92.5 0,0,1 92.5,184.99999999999994Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Yarn" data-math="N" x="0" y="0" transform="translate(66.29367288839157,197.47653773226278)rotate(-6)translate(0.000396728515625,4.75)">Yarn</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M94.52134693212297,204.23183140064268L49.28202039818444,213.847747100964A138.75,138.75 0,0,0 58.24556775208909,241.43470922676715L100.49704516805939,222.62313948451146A92.5,92.5 0,0,1 94.52134693212297,204.23183140064268Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Homebrew" data-math="N" x="0" y="0" transform="translate(75.08734738082605,220.71278570117482)scale(0.6969481228719893)rotate(-18)translate(-0.000396728515625,4.75)">Homebrew</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M100.49704516805939,222.62313948451146L58.24556775208909,241.43470922676715A138.75,138.75 0,0,0 72.74889203047596,266.5552037555805L110.16592802031731,239.37013583705368A92.5,92.5 0,0,1 100.49704516805939,222.62313948451146Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="pip3" data-math="N" x="0" y="0" transform="translate(81.05138402302443,245.01476141619577)rotate(-30)translate(0.0001983642578125,4.75)">pip3</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M110.16592802031737,239.37013583705374L72.74889203047604,266.55520375558064A138.75,138.75 0,0,0 142.12389203047604,316.9590916359525L156.41592802031735,272.9727277573017A92.5,92.5 0,0,1 110.16592802031737,239.37013583705374Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="FRAMEWORKS" data-math="N" x="0" y="0" transform="translate(110.71339752717797,287.2467365768214)scale(0.8725557478101617)rotate(36)translate(0.0001983642578125,4.75)">FRAMEWORKS</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M156.41592802031735,272.9727277573017L142.12389203047604,316.9590916359525A138.75,138.75 0,0,0 199.50332427838686,322.98991298234796L194.6688828522579,276.9932753215653A92.5,92.5 0,0,1 156.41592802031735,272.9727277573017Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="DATABASE" data-math="N" x="0" y="0" transform="translate(171.41402350930287,314.2619317989916)scale(0.7866598856540169)rotate(6)translate(0.0003204345703125,4.75)">DATABASE</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M194.6688828522579,276.9932753215653L199.50332427838686,322.98991298234796A138.75,138.75 0,0,0 227.87610796952393,316.9590916359526L213.58407197968262,272.9727277573017A92.5,92.5 0,0,1 194.6688828522579,276.9932753215653Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Python" data-math="N" x="0" y="0" transform="translate(209.01246933137082,297.9697862192956)rotate(78)translate(-0.0001373291015625,4.75)">Python</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M213.58407197968262,272.9727277573017L227.87610796952393,316.9590916359526A138.75,138.75 0,0,0 254.375,305.1610247750908L231.25,265.1073498500606A92.5,92.5 0,0,1 213.58407197968262,272.9727277573017Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Node.js" data-math="N" x="0" y="0" transform="translate(231.98434010256057,290.5285556679735)scale(0.9752254963560621)rotate(66)translate(-0.000396728515625,4.75)">Node.js</text></g></g><g class="slice cursor-pointer"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1;" d="M231.24999999999994,265.1073498500606L254.3749999999999,305.16102477509094A138.75,138.75 0,0,0 297.2511079695239,266.5552037555808L259.83407197968256,239.37013583705385A92.5,92.5 0,0,1 231.24999999999994,265.1073498500606Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="TESTING" data-math="N" x="0" y="0" transform="translate(271.25651693297567,280.7975671913392)scale(0.930863575371901)rotate(-42)translate(0.00006103515625,4.75)">TESTING</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M259.83407197968256,239.37013583705385L297.2511079695239,266.5552037555808A138.75,138.75 0,0,0 311.7544322479108,241.43470922676738L269.50295483194054,222.62313948451157A92.5,92.5 0,0,1 259.83407197968256,239.37013583705385Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="Agile" data-math="N" x="0" y="0" transform="translate(287.51446845395685,244.18675595772356)rotate(30.000000000000057)translate(0.0001373291015625,4.75)">Agile</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M269.50295483194054,222.62313948451157L311.7544322479108,241.43470922676738A138.75,138.75 0,0,0 320.7179796018155,213.84774710096417L275.478653067877,204.2318314006428A92.5,92.5 0,0,1 269.50295483194054,222.62313948451157Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="REST" data-math="N" x="0" y="0" transform="translate(296.6915659210579,221.29078967084777)rotate(18)translate(-0.00006103515625,4.75)">REST</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M275.478653067877,204.2318314006428L320.7179796018155,213.84774710096417A138.75,138.75 0,0,0 323.75,185.00000000000003L277.5,185.00000000000003A92.5,92.5 0,0,1 275.478653067877,204.2318314006428Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="CRUD" data-math="N" x="0" y="0" transform="translate(300.4329567240357,197.1324926409358)rotate(6.000000000000057)translate(0.000457763671875,4.75)">CRUD</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M115.62500000000003,64.83897522490912L92.50000000000004,24.785300299878827A185,185 0,0,0 61.210837823611286,47.51820728668201L92.15812836770847,81.88865546501152A138.75,138.75 0,0,1 115.62500000000003,64.83897522490912Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Git" data-math="N" x="0" y="0" transform="translate(86.55050296086651,49.4958921958563)translate(0.0001983642578125,4.75)">Git</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M92.15812836770847,81.88865546501152L61.210837823611286,47.51820728668201A185,185 0,0,0 35.33185604063479,76.25972832589238L72.74889203047609,103.4447962444193A138.75,138.75 0,0,1 92.15812836770847,81.88865546501152Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Github" data-math="N" x="0" y="0" transform="translate(64.78236917207735,76.75555900663362)rotate(42)translate(-0.00006103515625,4.75)">Github</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(196, 122, 192); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M72.74889203047609,103.4447962444193L35.33185604063479,76.25972832589238A185,185 0,0,0 15.994090336118887,109.75372103097685L58.24556775208916,128.56529077323265A138.75,138.75 0,0,1 72.74889203047609,103.4447962444193Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Heroku" data-math="N" x="0" y="0" transform="translate(44.891424916759604,104.1082764599162)rotate(30)translate(0.000457763671875,4.75)">Heroku</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M72.74889203047604,266.55520375558064L35.33185604063473,293.7402716741075A185,185 0,0,0 61.210837823611186,322.4817927133179L92.15812836770839,288.1113445349884A138.75,138.75 0,0,1 72.74889203047604,266.55520375558064Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Flask" data-math="N" x="0" y="0" transform="translate(64.83340781256882,293.19848559505215)rotate(-42)translate(0.000457763671875,4.75)">Flask</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M92.15812836770839,288.1113445349884L61.210837823611186,322.4817927133179A185,185 0,0,0 92.49999999999991,345.21469970012106L115.62499999999994,305.1610247750908A138.75,138.75 0,0,1 92.15812836770839,288.1113445349884Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Express" data-math="N" x="0" y="0" transform="translate(89.89816575944378,315.8964452523479)scale(0.9503869012664072)rotate(-54)translate(0,4.75)">Express</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M115.62499999999994,305.1610247750908L92.49999999999991,345.21469970012106A185,185 0,0,0 127.8318560406347,360.9454555146034L142.12389203047604,316.9590916359525A138.75,138.75 0,0,1 115.62499999999994,305.1610247750908Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="Mongoose" data-math="N" x="0" y="0" transform="translate(119.17899647376798,332.8363944151959)scale(0.7444216881609641)rotate(-66)translate(0,4.75)">Mongoose</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M142.12389203047604,316.9590916359525L127.8318560406347,360.9454555146034A185,185 0,0,0 165.66223429548396,368.98655064313056L170.49667572161297,322.98991298234796A138.75,138.75 0,0,1 142.12389203047604,316.9590916359525Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="PostgreSQL" data-math="N" x="0" y="0" transform="translate(151.3518716996449,343.3019975294444)scale(0.6491627234180373)rotate(-78)translate(-0.0168609619140625,4.75)">PostgreSQL</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(221, 94, 152); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M170.49667572161297,322.98991298234796L165.66223429548396,368.98655064313056A185,185 0,0,0 204.33776570451565,368.9865506431306L199.50332427838674,322.98991298234796A138.75,138.75 0,0,1 170.49667572161297,322.98991298234796Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;" data-unformatted="MongoDB" data-math="N" x="0" y="0" transform="translate(184.99999999999983,346.8216884747203)scale(0.7851961370434537)rotate(-90)translate(0.000457763671875,4.75)">MongoDB</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M254.3749999999999,305.16102477509094L277.4999999999999,345.21469970012123A185,185 0,0,0 308.7891621763886,322.4817927133181L277.84187163229143,288.1113445349886A138.75,138.75 0,0,1 254.3749999999999,305.16102477509094Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="Mocha" data-math="N" x="0" y="0" transform="translate(280.0804740524673,315.8670454756449)rotate(54.00000000000006)translate(0,4.75)">Mocha</text></g></g><g class="slice"><path class="surface" style="pointer-events: all; stroke-width: 2px; fill: rgb(73, 65, 189); fill-opacity: 1; stroke: rgb(254, 254, 254); stroke-opacity: 1; opacity: 0.4;" d="M277.84187163229143,288.1113445349886L308.7891621763886,322.4817927133181A185,185 0,0,0 334.668143959365,293.7402716741078L297.2511079695238,266.55520375558086A138.75,138.75 0,0,1 277.84187163229143,288.1113445349886Z"></path><g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" style="font-family: &quot;Open Sans&quot;, verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;" data-unformatted="Chai" data-math="N" x="0" y="0" transform="translate(309.47102748858964,297.0742165486341)translate(0,4.75)">Chai</text></g></g></g></g><g class="glimages"></g></svg><div class="gl-container"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="370"><defs id="topdefs-f3f6ae"><g class="clips"></g></defs><g class="indicatorlayer"></g><g class="layer-above"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="infolayer"><g class="g-gtitle"></g></g><g class="menulayer"></g><g class="zoomlayer"></g></svg><div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;"><div id="modebar-f3f6ae" class="modebar modebar--hover ease-bg"><div class="modebar-group"><a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n"><svg viewBox="0 0 1000 1000" class="icon" height="1em" width="1em"><path d="m500 450c-83 0-150-67-150-150 0-83 67-150 150-150 83 0 150 67 150 150 0 83-67 150-150 150z m400 150h-120c-16 0-34 13-39 29l-31 93c-6 15-23 28-40 28h-340c-16 0-34-13-39-28l-31-94c-6-15-23-28-40-28h-120c-55 0-100-45-100-100v-450c0-55 45-100 100-100h800c55 0 100 45 100 100v450c0 55-45 100-100 100z m-400-550c-138 0-250 112-250 250 0 138 112 250 250 250 138 0 250-112 250-250 0-138-112-250-250-250z m365 380c-19 0-35 16-35 35 0 19 16 35 35 35 19 0 35-16 35-35 0-19-16-35-35-35z" transform="matrix(1 0 0 -1 0 850)"></path></svg></a><a rel="tooltip" class="modebar-btn" data-title="Edit in Chart Studio" data-toggle="false" data-gravity="n"><svg viewBox="0 0 857.1 1000" class="icon" height="1em" width="1em"><path d="m214-7h429v214h-429v-214z m500 0h72v500q0 8-6 21t-11 20l-157 156q-5 6-19 12t-22 5v-232q0-22-15-38t-38-16h-322q-22 0-37 16t-16 38v232h-72v-714h72v232q0 22 16 38t37 16h465q22 0 38-16t15-38v-232z m-214 518v178q0 8-5 13t-13 5h-107q-7 0-13-5t-5-13v-178q0-8 5-13t13-5h107q7 0 13 5t5 13z m357-18v-518q0-22-15-38t-38-16h-750q-23 0-38 16t-16 38v750q0 22 16 38t38 16h517q23 0 50-12t42-26l156-157q16-15 27-42t11-49z" transform="matrix(1 0 0 -1 0 850)"></path></svg></a></div><div class="modebar-group"><a rel="tooltip" class="modebar-btn active" data-title="Toggle show closest data on hover" data-attr="hovermode" data-val="null" data-toggle="true" data-gravity="ne"><svg viewBox="0 0 1500 1000" class="icon" height="1em" width="1em"><path d="m375 725l0 0-375-375 375-374 0-1 1125 0 0 750-1125 0z" transform="matrix(1 0 0 -1 0 850)"></path></svg></a></div><div class="modebar-group"><a href="https://plot.ly/" target="_blank" data-title="Produced with Plotly" class="modebar-btn plotlyjsicon modebar-btn--logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132" height="1em" width="1em"><defs><style>.cls-1 {fill: #119dff;} .cls-2 {fill: #25fefd;} .cls-3 {fill: #fff;}</style></defs><title>plotly-logomark</title><g id="symbol"><rect class="cls-1" width="132" height="132" rx="6" ry="6"></rect><circle class="cls-2" cx="78" cy="54" r="6"></circle><circle class="cls-2" cx="102" cy="30" r="6"></circle><circle class="cls-2" cx="78" cy="30" r="6"></circle><circle class="cls-2" cx="54" cy="30" r="6"></circle><circle class="cls-2" cx="30" cy="30" r="6"></circle><circle class="cls-2" cx="30" cy="54" r="6"></circle><path class="cls-3" d="M30,72a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V78A6,6,0,0,0,30,72Z"></path><path class="cls-3" d="M78,72a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V78A6,6,0,0,0,78,72Z"></path><path class="cls-3" d="M54,48a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V54A6,6,0,0,0,54,48Z"></path><path class="cls-3" d="M102,48a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V54A6,6,0,0,0,102,48Z"></path></g></svg></a></div></div></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="370"><g class="hoverlayer"></g></svg></div></div></div>
             </div>
           </div>
         </div>
       </div>
-      </main>
-    </div>
-  </div>
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="col-md-12 ml-auto text-center">
-        <small class="text-uppercase">Connect on social media</small>
-        <ul class="nav justify-content-center is-footer">
-          <li class="nav-item"><a href="https://github.com/UstinVaskin" target="blank" class="nav-link pr-0"><i
-                class="fab fa-github fa-2x"></i></a>
-          </li>
-          <li class="nav-item"><a href="https://www.linkedin.com/in/ustin-vaskin/" target="blank"
-              class="nav-link pr-0"><i class="fab fa-linkedin fa-2x"></i></a></li>
-          <li class="nav-item"><a href="https://www.facebook.com/ustin.m.vaskin" target="blank" class="nav-link pr-0"><i
-                class="fab fa-facebook fa-2x"></i></a></li>
-          <li class="nav-item"><a href="https://medium.com/@ustin.vaskin" target="blank" class="nav-link pr-0"><i
-                class="fab fa-medium fa-2x"></i></a></li>
-        </ul>
-      </div>
-      <br>
-      <div class="col-12 text-center">
-        Ustin Vaskin | Designer, Software Engineer &amp; Project Manager Handcrafted by me |
-        <span>&#169 2019</span></div>
-      <br>
-      <br>
-    </div>
-    </div>
-  </footer>
-  <!-- FOOTER -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <script src=""></script>
-  <script src="js/scripts.js"></script>
-</body>
+      </section>
 
-</html>
+
+
+      <div class="spacer" id="contact"></div>
+      <section class="blog-section">
+        <div class="titles-container"><a class="titles" id="blog-title" href="#blog">Blog</a></div>
+        <div class="container blog-container">
+         
+        </div>
+      </section>
+
+
+
+
+
+
+    <div class="spacer" id="contact"></div>
+    <section class="contact-section">
+      <div class="titles-container"><a class="titles" id="contact-title" href="#contact">Contact</a></div>
+      <div class="container contact-container">
+        <div class="contact-links">
+            <span><i class="contact-info contact-email fas fa-envelope"></i><a href="mailto:ustin.vaskin2011@gmail.com"> ustin.vaskin2011@gmail.com</a></span>
+            <span><i class="contact-info contact-github devicon-github-plain"></i><a href="https://github.com/UstinVaskin"> github.com/UstinVaskin</a></span>
+            <span><i class="contact-info contact-linkedin fab fa-linkedin"></i><a href="https://www.linkedin.com/in/ustin-vaskin/">linkedin.com/in/ustin-vaskin</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
