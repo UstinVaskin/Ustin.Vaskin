@@ -669,7 +669,7 @@ background-color: var(--main-bg-1);}
 .contact-section {
   background: var (--main-bg-1);
   margin-bottom: 4em;
-  color: #FF304F; }
+  color: var(--main-bg-1); }
   .contact-section #contact-title {
     color: #fff; }
 
@@ -779,7 +779,7 @@ canvas {
   letter-spacing: 0.1em; }
 
 .main-title .thin {
-  color: #FF304F;
+  color: var(--main-bg-2)
   font-weight: 200; }
 
 @media only screen and (max-width: 768px) {
@@ -839,7 +839,7 @@ a:hover {
     height: 32px;
     font-size: 22px;
     width: 55px;
-    color: #FF304F;
+    color: var(--main-bg-2);
     top: 10px;
     left: 16px; }
     #logo .span-line {
