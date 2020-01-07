@@ -189,7 +189,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.4em;
+  font-size: 1.5rem;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -618,7 +618,7 @@ background-color: var(--main-bg-1);}
     margin-bottom: 4em; } }
 .techskills-wrapper p {
   margin-bottom: 2px;
-  font-size: 1.4em; }
+  font-size: 1.2em; }
 .techskills-wrapper .fa-stop {
   font-size: 0.4em;
   vertical-align: middle;
@@ -636,7 +636,7 @@ background-color: var(--main-bg-1);}
 
 @media only screen and (max-width: 900px) {
   .techskills-wrapper p {
-    font-size: 1.2em; } }
+    font-size: 1.0em; } }
 #sunburst {
   width: 100%;
   height: 100%;
